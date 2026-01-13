@@ -1,0 +1,54 @@
+{
+  "name": "localy-v1",
+  "displayName": "Localy",
+  "description": "Production Ready Course Uploader by Thnoxs",
+  "version": "1.0.0",
+  "publisher": "Thnoxs",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onView:localy.uploaderView"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "localy-sidebar",
+          "title": "Localy",
+          "icon": "media/sidebar.svg"
+        }
+      ]
+    },
+    "views": {
+      "localy-sidebar": [
+        {
+          "type": "webview",
+          "id": "localy.uploaderView",
+          "name": "Uploader Dashboard"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "eslint": "^8.14.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.6.4",
+    "@vscode/test-electron": "^2.1.3"
+  }
+}
