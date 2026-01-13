@@ -1,6 +1,5 @@
 # Localy v1 
 
-![Localy Dashboard](https://raw.githubusercontent.com/thnoxs/localy/main/media/preview.jpg)
 **Localy** is a professional, high-speed course automation tool for VS Code. It allows you to upload entire course directories from your local machine to Telegram channels with organized modules, automatic thumbnails, and a clean index post—all without leaving your editor.
 
 ---

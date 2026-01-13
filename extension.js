@@ -114,7 +114,7 @@ class LocalyViewProvider {
 
                 <div id="step-phone" class="hidden">
                     <label>ENTER PHONE NUMBER</label>
-                    <input type="text" id="phone" placeholder="+9198********">
+                    <input type="text" id="phone" placeholder="e.g. +91XXXXXXXXXX">
                     <button class="btn-primary" onclick="sendInput('phone')">Send OTP</button>
                 </div>
 
